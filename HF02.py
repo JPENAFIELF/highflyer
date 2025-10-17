@@ -17,7 +17,7 @@ import websockets
 
 # ---------- Config ----------
 TELEGRAM_TOKEN = "7146220577:AAFigkvKan9mEN_PUxZukcop-OiSJ8wA-Gc"  # required for Telegram alerts
-TELEGRAM_CHAT_IDS = os.environ.get("TELEGRAM_CHAT_IDS", "1246125520").split(",")  # CSV
+TELEGRAM_CHAT_IDS = os.environ.get("TELEGRAM_CHAT_IDS", "-4942057806").split(",")  # CSV
 WHATSAPP_WEBHOOK = os.environ.get("WHATSAPP_WEBHOOK")  # optional: endpoint that accepts {"groupName","message"}
 WS_URI = os.environ.get("WS_URI", "wss://dga.pragmaticplaylive.net/ws")
 CASINO_ID = os.environ.get("CASINO_ID", "ppcdk00000005349")
