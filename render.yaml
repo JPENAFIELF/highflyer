@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: highflyer-backend
+    env: python
+    branch: main
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python HF02.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: "7146220577:AAFigkvKan9mEN_PUxZukcop-OiSJ8wA-Gc"
+      - key: TELEGRAM_CHAT_IDS
+        value: "1246125520"
+      # - key: WHATSAPP_WEBHOOK
+      #   value: "TU_WHATSAPP_WEBHOOK"
+      - key: WS_URI
+        value: "wss://dga.pragmaticplaylive.net/ws"
+      - key: CASINO_ID
+        value: "ppcdk00000005349"
+      - key: WS_KEYS
+        value: "[2201]"
+      - key: HISTORY_LIMIT
+        value: "800"
+      - key: RECONNECT_DELAY
+        value: "5"
